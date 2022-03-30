@@ -77,6 +77,10 @@ export default function Calculator() {
       vibrate();
       // The substring of the display is taken from the first char of the string (pos 0) to the second last char of the string (pos length-1)
       // The last char is 'deleted' from the string
+      if (display == undefined || display == null) {
+        console.log("Nothing to delete.");
+        return;
+      }
       setDisplay(display.substring(0, display.length - 1)); // Copy all chars but the last one
       return;
       // If a user presses the clear button
@@ -101,7 +105,10 @@ export default function Calculator() {
   function calculate() {
     // Check if the expression is in a valid format
 
-    console.log("display", display.toString());
+    if (display == undefined || display == null) {
+      console.log("SHOULD NOT BE EVALUATING AT THIS POINT");
+      return;
+    }
 
     // Set the last char in the display string as lastCharInDisplay
     let lastCharInDisplay = display[display.length - 1];
@@ -112,14 +119,20 @@ export default function Calculator() {
       lastCharInDisplay === "-" ||
       lastCharInDisplay === "*" ||
       lastCharInDisplay === "/" ||
-      lastCharInDisplay === "." ||
-      lastCharInDisplay === null ||
-      lastCharInDisplay === ""
+      lastCharInDisplay === "."
     ) {
       return;
     } else {
       // Use the eval() function to evaluates the display string as if it were an expression, and toString() to return the result in string format
-      setDisplay(eval(display).toString());
+      // setDisplay(eval(display).toString());
+      let displaySTR = display.toString();
+      console.dir(displaySTR);
+
+      let evaled = eval(displaySTR);
+      console.dir(evaled);
+
+      setDisplay(evaled);
+
       return;
     }
   }

@@ -1,5 +1,5 @@
 {
-  /* StyleSheet.create is used to define multiple style props (css) in one location */
+  /* Defines multiple style props (css) in one location */
 }
 export const darkTheme = {
   // Calculator display (screen)

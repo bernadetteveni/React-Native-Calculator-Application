@@ -52,17 +52,17 @@ export const darkTheme = {
     color: "#a6a6a6",
     paddingLeft: 30,
     paddingRight: 30,
-  },
+  }, // Settings screen background
   settings: {
     height: "100%",
     backgroundColor: "#202020",
-  },
+  }, // Title text of settings screen
   settingsTitle: {
     color: "white",
     fontSize: 30,
     textAlign: "center",
     paddingBottom: 30,
-  },
+  }, // Container for settings page data
   settingsContainer: {
     margin: "auto",
     alignItems: "flex-start",
@@ -70,13 +70,13 @@ export const darkTheme = {
     padding: 10,
     paddingTop: 38,
     backgroundColor: "#202020",
-  },
+  }, // Settings page secondary titles
   secondaryText: {
     color: "white",
     fontSize: 22,
     textAlign: "left",
     paddingLeft: 20,
-  },
+  }, // Toggle switches
   toggleContainer: {
     alignItems: "flex-end",
     justifyContent: "flex-end",
@@ -135,17 +135,17 @@ export const lightTheme = {
     color: "#4d4d4d",
     paddingLeft: 30,
     paddingRight: 30,
-  },
+  }, // Settings screen background
   settings: {
     height: "100%",
     backgroundColor: "#efefef",
-  },
+  }, // Title text of settings screen
   settingsTitle: {
     color: "black",
     fontSize: 30,
     textAlign: "center",
     paddingBottom: 30,
-  },
+  }, // Container for settings page data
   settingsContainer: {
     margin: "auto",
     alignItems: "flex-start",
@@ -153,13 +153,13 @@ export const lightTheme = {
     padding: 10,
     paddingTop: 38,
     backgroundColor: "#efefef",
-  },
+  }, // Settings page secondary titles
   secondaryText: {
     color: "black",
     fontSize: 22,
     textAlign: "left",
     paddingLeft: 20,
-  },
+  }, // Toggle switches
   toggleContainer: {
     alignItems: "flex-end",
     justifyContent: "flex-end",
